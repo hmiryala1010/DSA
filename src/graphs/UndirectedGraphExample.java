@@ -48,9 +48,10 @@ public class UndirectedGraphExample {
 		        adjList.get(2).add(6);
 		        adjList.get(6).add(2);
 
-		        System.out.println("BFS Traversal of Undirected Graph starting from node 0:");
+		        System.out.println("BFS Traversal of Undirected Graph starting from node given:");
 		        Bfs.bfs(2, adjList); // calling bfs from SimpleBFS
-		    
+		        System.out.println("DFS Traversal of Directed Graph starting from node given:");
+		        SimpleDfs.dfs(0, adjList);
 	
 
 	}

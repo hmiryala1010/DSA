@@ -36,8 +36,11 @@ public class DirectedGraphExample {
 		        adjList.get(2).add(5); // 2 → 5
 		        adjList.get(2).add(6); // 2 → 6
 
-		        System.out.println("BFS Traversal of Directed Graph starting from node 0:");
-		        Bfs.bfs(5, adjList); // calling bfs from SimpleBFS
+		        System.out.println("BFS Traversal of Directed Graph starting from node given:");
+		        Bfs.bfs(5, adjList); // calling bfs from bfs
+		        System.out.println("DFS Traversal of Directed Graph starting from node given:");
+
+		        SimpleDfs.dfs(0, adjList);
 	 
 	}
 
